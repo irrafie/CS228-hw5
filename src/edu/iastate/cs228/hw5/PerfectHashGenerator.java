@@ -58,11 +58,15 @@ PerfectHashGenerator
 
     String prefix = "";
     Random rng;
-
-
-    // TODO remove this and process args properly
     rng = null;
 
+    if(args.length >= 2) {
+      prefix = args[1];
+    }
+
+    if(args.length == 3) {
+      rng = new Random(Integer.parseInt(args[2]));
+    }
 
     PerfectHashGenerator gen = new PerfectHashGenerator();
     try
@@ -102,6 +106,15 @@ PerfectHashGenerator
     throws IOException,
            IllegalArgumentException
   {
+      if(wordFileName == null || outputClassName == null || rng == null){
+        throw new IllegalArgumentException("Generate input argument error");
+      }
+
+      List<String> wordList = readWordFile(wordFileName);
+      String outputName = outputClassName + ".java";
+
+
+
     // TODO
   }
 
