@@ -11,7 +11,7 @@ import java.util.Random;
 /**
  * A class that generates a perfect hash table.
  *
- * @author
+ * @author  Irfan Farhan Mohamad Rafie
  */
 public
 class
