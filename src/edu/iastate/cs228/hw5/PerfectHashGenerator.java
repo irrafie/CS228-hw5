@@ -2,10 +2,12 @@ package edu.iastate.cs228.hw5;
 
 
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
 
 /**
@@ -208,7 +210,13 @@ PerfectHashGenerator
   readWordFile(String fileName)
     throws FileNotFoundException
   {
-    // TODO
-    return null;
+
+    Scanner input = new Scanner(new FileReader(fileName));
+    List<String> inputList = null;
+    while(input.hasNext()){
+      inputList.add(input.next());
+    }
+
+    return inputList;
   }
 }
