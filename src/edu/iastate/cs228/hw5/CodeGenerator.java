@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * A class that generates Java code for the perfect hash table implementation.
  *
- * @author
+ * @author  Irfan Farhan Mohamad Rafie
  */
 public
 class
@@ -264,7 +264,8 @@ CodeGenerator
   void
   begin(PrintStream ps, String access, String className)
   {
-    // TODO
+    ps.println("package edu.iastate.cs228.hw5;\n");
+    ps.println(access + " class " + className + "{\n");
   }
 
   /**
@@ -283,7 +284,17 @@ CodeGenerator
   void
   array(PrintStream ps, String[] data, String access, String varName)
   {
-    // TODO
+    ps.print(access + " " + "String[] " + varName + " = " + "{ ");
+    for(int i = 0; i < data.length; i++){
+      if(i != data.length -1){
+        ps.print("\"" + data[i] + "\", ");
+      }
+      else{
+        ps.print("\"" + data[i] + "\"");
+      }
+    }
+    ps.print("};");
+    ps.println();
   }
 
   /**
@@ -302,6 +313,16 @@ CodeGenerator
   void
   array(PrintStream ps, int[] data, String access, String varName)
   {
+    ps.print(access + " int[] " + varName + " = {");
+    for(int i = 0; i < data.length; i++){
+      if(i != data.length -1) {
+        ps.print(data[i] + ", ");
+      }
+      else{
+        ps.print(data[i]);
+      }
+    }
+    ps.println("};");
     // TODO
   }
 
@@ -321,7 +342,25 @@ CodeGenerator
   void
   table(PrintStream ps, int[][] data, String access, String varName)
   {
-    // TODO
+    ps.println(access + " int[][] " + varName + "= { ");
+    for(int x = 0; x < data.length; x++){
+      ps.print("{ " );
+      for(int y = 0; y < data[0].length;y++){
+        if(y != data[0].length -1){
+          ps.print(data[x][y] + ", ");
+        }
+        else {
+          ps.print(data[x][y] + "}");
+        }
+      }
+      if(x != data.length -1) {
+        ps.println(", ");
+      }
+      else{
+        ps.println("};");
+      }
+    }
+    ps.println();
   }
 
   /**
@@ -468,7 +507,7 @@ CodeGenerator
   void
   end(PrintStream ps)
   {
-    // TODO
+    ps.println("}");
   }
 
   /**

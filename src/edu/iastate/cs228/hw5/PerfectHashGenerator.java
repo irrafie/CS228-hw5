@@ -1,10 +1,10 @@
 package edu.iastate.cs228.hw5;
 
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.OutputStream;
+import com.sun.org.apache.bcel.internal.classfile.Code;
+
+import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
@@ -58,7 +58,8 @@ PerfectHashGenerator
 
     String prefix = "";
     Random rng;
-    rng = null;
+    Random seeder = new Random(25);
+    rng = new Random(seeder.nextInt());
 
     if(args.length >= 2) {
       prefix = args[1];
@@ -103,18 +104,46 @@ PerfectHashGenerator
   public
   void
   generate(String wordFileName, String outputClassName, Random rng)
-    throws IOException,
-           IllegalArgumentException
+          throws IOException, IllegalArgumentException
   {
-      if(wordFileName == null || outputClassName == null || rng == null){
+      if(false){
         throw new IllegalArgumentException("Generate input argument error");
       }
+
 
       List<String> wordList = readWordFile(wordFileName);
       String outputName = outputClassName + ".java";
 
+      int[][] T1 = new int[TABLE_ROWS][TABLE_COLUMNS], T2 = new int[TABLE_ROWS][TABLE_COLUMNS];
+
+      for(int i = 0; i < TABLE_ROWS; i++){
+        for(int y = 0; y < TABLE_COLUMNS; y++){
+          T1[i][y] = Math.abs(rng.nextInt()) % (2*wordList.size() + 1);
+          T2[i][y] = Math.abs(rng.nextInt()) % (2*wordList.size() + 1);
+        }
+      }
+
+      int[] gArray = new int[2*wordList.size()+1];
+      gArray[0] = 0;
 
 
+      File file = new File("src//edu//iastate//cs228//hw5//" + outputName);
+
+      Graph temp = mapping(T1, T2,2*wordList.size(), rng, wordList);
+      gArray = temp.fillGArray(wordList.size());
+      String test = temp.toString();
+      System.out.print(test);
+      CodeGenerator codeGen = new CodeGenerator(T1, T2, gArray, 2*wordList.size(), wordList);
+      OutputStream out = new FileOutputStream("src//edu//iastate//cs228//hw5//" + outputName);
+      codeGen.generate(out, outputClassName);
+//
+//
+//
+//      FileWriter writer = new FileWriter(file);
+//      for(int i = 0; i < wordList.size(); i++) {
+//        writer.write(wordList.get(i) + "\n");
+//      }
+//      writer.close();
     // TODO
   }
 
@@ -170,11 +199,12 @@ PerfectHashGenerator
     throws IllegalArgumentException
   {
     Graph toRet;
+    Visualizer vis = new Visualizer();
 
     do
     {
       toRet = new Graph(modulus);
-
+      vis.useGraph(toRet);    //REMOVE AFTER USE
       for (int r = 0; r < TABLE_ROWS; ++r)
       {
         for (int c = 0; c < TABLE_COLUMNS; ++c)
@@ -225,7 +255,7 @@ PerfectHashGenerator
   {
 
     Scanner input = new Scanner(new FileReader(fileName));
-    List<String> inputList = null;
+    ArrayList<String> inputList = new ArrayList<>();
     while(input.hasNext()){
       inputList.add(input.next());
     }

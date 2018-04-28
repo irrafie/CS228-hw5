@@ -8,7 +8,7 @@ import java.util.Collection;
 /**
  * A graph used to generate a perfect hash table.
  *
- * @author
+ * @author  Irfan Farhan Mohamad Rafie
  */
 public
 class
@@ -111,6 +111,18 @@ Graph
     throws IndexOutOfBoundsException,
            NullPointerException
   {
+    if(word == null){
+      throw new NullPointerException();
+    }
+
+    if(fromIdx < 0 || fromIdx > vertices.length || toIdx < 0 || toIdx > vertices.length){
+      throw new IndexOutOfBoundsException();
+    }
+
+    GraphEdge temp = new GraphEdge(index, word, vertices[fromIdx], vertices[toIdx]);
+
+    vertices[fromIdx].edges().add(temp);
+    vertices[toIdx].edges().add(temp);
     // TODO
   }
 
@@ -121,7 +133,12 @@ Graph
   void
   unvisitAll()
   {
-    // TODO
+    for(int i = 0; i < vertices.length; i++){
+      vertices[i].setVisited(false);
+      for(Edge vis : vertices[i].edges()){
+        vis.setVisited(false);
+      }
+    }
   }
 
   /**
@@ -163,7 +180,12 @@ Graph
   boolean
   hasCycle()
   {
-    // TODO
+    for(int i = 0; i < vertices.length; i++) {
+      for (Edge out : vertices[i].edges()) {
+        if (out.getFrom() == out.getTo())
+          return true;
+      }
+    }
     return false;
   }
 
@@ -255,7 +277,7 @@ Graph
     setVisited(boolean visited)
     {
       // TODO
-
+      this.visited = visited;
       /*
        * Don't forget to handle the special false case.
        */
@@ -319,8 +341,12 @@ Graph
     boolean
     hasCycle(Vertex from)
     {
-      // TODO
-      return false;
+      if(from.edges().contains(this)){
+        return true;
+      }
+      else {
+        return false;
+      }
     }
 
     @Override
