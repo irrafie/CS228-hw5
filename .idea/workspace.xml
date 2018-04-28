@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21d9080d-906c-4d6f-85dd-a0b09e1e82e8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/1-1000.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/10000.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/months.txt" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw5/edu/iastate/cs228/hw5/CodeGenerator.class" afterPath="$PROJECT_DIR$/out/production/hw5/edu/iastate/cs228/hw5/CodeGenerator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw5/edu/iastate/cs228/hw5/Graph$GraphEdge.class" afterPath="$PROJECT_DIR$/out/production/hw5/edu/iastate/cs228/hw5/Graph$GraphEdge.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw5/edu/iastate/cs228/hw5/Graph$GraphVertex.class" afterPath="$PROJECT_DIR$/out/production/hw5/edu/iastate/cs228/hw5/Graph$GraphVertex.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw5/edu/iastate/cs228/hw5/Graph.class" afterPath="$PROJECT_DIR$/out/production/hw5/edu/iastate/cs228/hw5/Graph.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hw5/edu/iastate/cs228/hw5/PerfectHashGenerator.class" afterPath="$PROJECT_DIR$/out/production/hw5/edu/iastate/cs228/hw5/PerfectHashGenerator.class" />
       <change beforePath="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/CodeGenerator.java" afterPath="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/CodeGenerator.java" />
+      <change beforePath="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Edge.java" afterPath="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Edge.java" />
       <change beforePath="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Graph.java" afterPath="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Graph.java" />
       <change beforePath="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/PerfectHashGenerator.java" afterPath="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/PerfectHashGenerator.java" />
     </list>
@@ -24,104 +16,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PerfectHashGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/PerfectHashGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="154" column="17" lean-forward="true" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="124" column="40" lean-forward="true" selection-start-line="124" selection-start-column="40" selection-end-line="124" selection-end-column="40" />
-              <folding>
-                <element signature="e#6419#6420#0" expanded="true" />
-                <element signature="e#6483#6484#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="months.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/months.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1-1000.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1-1000.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="378" column="6" lean-forward="false" selection-start-line="378" selection-start-column="6" selection-end-line="378" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CodeGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/CodeGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1656">
-              <caret line="388" column="41" lean-forward="true" selection-start-line="388" selection-start-column="41" selection-end-line="388" selection-end-column="41" />
-              <folding>
-                <element signature="e#11386#11387#0" expanded="true" />
-                <element signature="e#11411#11412#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fooCHM92Hash.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/fooCHM92Hash.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Edge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Edge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Visualizer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Visualizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="705" column="18" lean-forward="false" selection-start-line="705" selection-start-column="10" selection-end-line="705" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TODO</find>
       <find>begin</find>
       <find>array</find>
       <find>table</find>
       <find>useGr</find>
       <find>==</find>
-      <find>drawEdge</find>
       <find>edge</find>
       <find>setVi</find>
       <find>setVis</find>
@@ -136,8 +39,11 @@
       <find>24</find>
       <find>hot</find>
       <find>gas</find>
+      <find>generate</find>
       <find>lay</find>
       <find>mapping</find>
+      <find>TODO</find>
+      <find>drawEdge</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,13 +64,14 @@
         <option value="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Visualizer.java" />
         <option value="$PROJECT_DIR$/timp.txt" />
         <option value="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/barCHM92Hash.java" />
-        <option value="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/CodeGenerator.java" />
-        <option value="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/PerfectHashGenerator.java" />
-        <option value="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Graph.java" />
         <option value="$PROJECT_DIR$/months.txt" />
         <option value="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/CHM92Hash.java" />
         <option value="$PROJECT_DIR$/1-1000.txt" />
         <option value="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/fooCHM92Hash.java" />
+        <option value="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Graph.java" />
+        <option value="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/PerfectHashGenerator.java" />
+        <option value="$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Edge.java" />
       </list>
     </option>
   </component>
@@ -266,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.fooCHM92Hash">
+  <component name="RunManager" selected="Application.PerfectHashGenerator">
     <configuration name="CHM92Hash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -412,8 +319,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.fooCHM92Hash" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PerfectHashGenerator" />
+        <item index="0" class="java.lang.String" itemvalue="Application.PerfectHashGenerator" />
+        <item index="1" class="java.lang.String" itemvalue="Application.fooCHM92Hash" />
         <item index="2" class="java.lang.String" itemvalue="Application.CHM92Hash" />
         <item index="3" class="java.lang.String" itemvalue="Application.barCHM92Hash" />
       </list>
@@ -438,16 +345,15 @@
       <option name="presentableId" value="Default" />
       <updated>1524769377903</updated>
       <workItem from="1524769380328" duration="909000" />
-      <workItem from="1524859153028" duration="24358000" />
+      <workItem from="1524859153028" duration="25403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25267000" />
+    <option name="totallyTimeSpent" value="26312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -457,12 +363,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22108346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22108346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3923445" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -513,8 +419,8 @@
         <state relative-caret-position="234">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#11386#11387#0" expanded="true" />
-            <element signature="e#11411#11412#0" expanded="true" />
+            <element signature="e#11744#11745#0" expanded="true" />
+            <element signature="e#11769#11770#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -543,14 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Visualizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="705" column="18" lean-forward="false" selection-start-line="705" selection-start-column="10" selection-end-line="705" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/barCHM92Hash.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -567,30 +465,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Edge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/timp.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="124" column="40" lean-forward="true" selection-start-line="124" selection-start-column="40" selection-end-line="124" selection-end-column="40" />
-          <folding>
-            <element signature="e#6419#6420#0" expanded="true" />
-            <element signature="e#6483#6484#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -610,17 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1656">
-          <caret line="388" column="41" lean-forward="true" selection-start-line="388" selection-start-column="41" selection-end-line="388" selection-end-column="41" />
-          <folding>
-            <element signature="e#11386#11387#0" expanded="true" />
-            <element signature="e#11411#11412#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/months.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -631,24 +499,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1-1000.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
+        <state relative-caret-position="-10854">
           <caret line="378" column="6" lean-forward="false" selection-start-line="378" selection-start-column="6" selection-end-line="378" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/PerfectHashGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="154" column="17" lean-forward="true" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/fooCHM92Hash.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="true" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/PerfectHashGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4950">
+          <caret line="279" column="0" lean-forward="true" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
+          <folding>
+            <element signature="e#6319#6320#0" expanded="true" />
+            <element signature="e#6383#6384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Visualizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="705" column="18" lean-forward="false" selection-start-line="705" selection-start-column="10" selection-end-line="705" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/CodeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10278">
+          <caret line="573" column="5" lean-forward="true" selection-start-line="573" selection-start-column="5" selection-end-line="573" selection-end-column="5" />
+          <folding>
+            <element signature="e#11744#11745#0" expanded="true" />
+            <element signature="e#11769#11770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/iastate/cs228/hw5/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding />
         </state>
       </provider>

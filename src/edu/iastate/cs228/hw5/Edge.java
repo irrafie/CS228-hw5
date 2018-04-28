@@ -3,6 +3,8 @@ package edu.iastate.cs228.hw5;
 
 /**
  * An interface representing an edge in the PHT graph.
+ *
+ *
  */
 public
 interface

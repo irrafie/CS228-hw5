@@ -265,6 +265,13 @@ CodeGenerator
   begin(PrintStream ps, String access, String className)
   {
     ps.println("package edu.iastate.cs228.hw5;\n");
+    String[] temp = new String[5];
+    temp[0] = "";
+    temp[1] = "@author  Irfan Farhan Mohamad Rafie";
+    temp[2] = "";
+    temp[3] = "";
+    temp[4] = "Automagically generated @author";
+    printDocComment(ps, temp, "");
     ps.println(access + " class " + className + "{\n");
   }
 
@@ -313,6 +320,10 @@ CodeGenerator
   void
   array(PrintStream ps, int[] data, String access, String varName)
   {
+    String[] temp = new String[2];
+    temp[0] = "G[] function from graphs";
+    temp[1] = "";
+    printDocComment(ps, temp,  " ");
     ps.print(access + " int[] " + varName + " = {");
     for(int i = 0; i < data.length; i++){
       if(i != data.length -1) {

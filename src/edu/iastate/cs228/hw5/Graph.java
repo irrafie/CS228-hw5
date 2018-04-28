@@ -124,7 +124,6 @@ Graph
 
     vertices[fromIdx].edges().add(temp);
     vertices[toIdx].edges().add(temp2);
-    // TODO
   }
 
   /**
@@ -277,11 +276,8 @@ Graph
     void
     setVisited(boolean visited)
     {
-      // TODO
       this.visited = visited;
-      /*
-       * Don't forget to handle the special false case.
-       */
+
     }
 
     @Override

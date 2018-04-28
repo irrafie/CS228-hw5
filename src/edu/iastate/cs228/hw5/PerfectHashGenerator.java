@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 /**
  * A class that generates a perfect hash table.
- *
+ * CODE TESTED AND WORKS ON LINUX
  * @author  Irfan Farhan Mohamad Rafie
  */
 public
@@ -133,19 +133,11 @@ PerfectHashGenerator
       Graph temp = mapping(T1, T2,2*wordList.size()+1, rng, wordList);
       gArray = temp.fillGArray(wordList.size());
       String test = temp.toString();
-      System.out.print(test);
+    //  System.out.print(test);
       CodeGenerator codeGen = new CodeGenerator(T1, T2, gArray, 2*wordList.size()+1, wordList);
       OutputStream out = new FileOutputStream("src//edu//iastate//cs228//hw5//" + outputName);
       codeGen.generate(out, outputClassName);
-//
-//
-//
-//      FileWriter writer = new FileWriter(file);
-//      for(int i = 0; i < wordList.size(); i++) {
-//        writer.write(wordList.get(i) + "\n");
-//      }
-//      writer.close();
-    // TODO
+
   }
 
   /**
@@ -170,7 +162,37 @@ PerfectHashGenerator
            Random rng)
     throws IllegalArgumentException
   {
-    // TODO
+    if(false){
+      throw new IllegalArgumentException("Generate input argument error");
+    }
+
+
+    List<String> wordList = words;
+    String outputName = outputClassName + ".java";
+
+    int[][] T1 = new int[TABLE_ROWS][TABLE_COLUMNS], T2 = new int[TABLE_ROWS][TABLE_COLUMNS];
+
+    for(int i = 0; i < TABLE_ROWS; i++){
+      for(int y = 0; y < TABLE_COLUMNS; y++){
+        T1[i][y] = Math.abs(rng.nextInt(2*wordList.size() + 1) % 2*wordList.size()+1);
+        T2[i][y] = Math.abs(rng.nextInt(2*wordList.size() + 1) % 2*wordList.size()+1);
+      }
+    }
+
+
+    int[] gArray = new int[2*wordList.size()+1];
+    gArray[0] = 0;
+
+
+    //File file = new File("src//edu//iastate//cs228//hw5//" + outputName);
+
+    Graph temp = mapping(T1, T2,2*wordList.size()+1, rng, wordList);
+    gArray = temp.fillGArray(wordList.size());
+    String test = temp.toString();
+  //  System.out.print(test);
+    CodeGenerator codeGen = new CodeGenerator(T1, T2, gArray, 2*wordList.size()+1, wordList);
+    codeGen.generate(output, outputClassName);
+
   }
 
   /**
@@ -200,12 +222,12 @@ PerfectHashGenerator
     throws IllegalArgumentException
   {
     Graph toRet;
-    Visualizer vis = new Visualizer();  //REMOVE AFTER USE
+    //Visualizer vis = new Visualizer();  //REMOVE AFTER USE
 
     do
     {
       toRet = new Graph(modulus);
-      vis.useGraph(toRet);    //REMOVE AFTER USE
+     // vis.useGraph(toRet);    //REMOVE AFTER USE
       for (int r = 0; r < TABLE_ROWS; ++r)
       {
         for (int c = 0; c < TABLE_COLUMNS; ++c)
