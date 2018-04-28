@@ -323,7 +323,6 @@ CodeGenerator
       }
     }
     ps.println("};");
-    // TODO
   }
 
   /**
@@ -342,6 +341,9 @@ CodeGenerator
   void
   table(PrintStream ps, int[][] data, String access, String varName)
   {
+    String[] temp = new String[1];
+    temp[0] = "A 2D array of " + varName;
+    printDocComment(ps, (temp)," ");
     ps.println(access + " int[][] " + varName + "= { ");
     for(int x = 0; x < data.length; x++){
       ps.print("{ " );

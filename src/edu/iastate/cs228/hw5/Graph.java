@@ -120,9 +120,10 @@ Graph
     }
 
     GraphEdge temp = new GraphEdge(index, word, vertices[fromIdx], vertices[toIdx]);
+    GraphEdge temp2 = new GraphEdge(index, word, vertices[toIdx], vertices[fromIdx]);
 
     vertices[fromIdx].edges().add(temp);
-    vertices[toIdx].edges().add(temp);
+    vertices[toIdx].edges().add(temp2);
     // TODO
   }
 
@@ -134,9 +135,9 @@ Graph
   unvisitAll()
   {
     for(int i = 0; i < vertices.length; i++){
-      vertices[i].setVisited(false);
+      vertices[i].unvisit();
       for(Edge vis : vertices[i].edges()){
-        vis.setVisited(false);
+        vis.unvisit();
       }
     }
   }
@@ -183,8 +184,8 @@ Graph
     for(int i = 0; i < vertices.length; i++) {
       for (Edge out : vertices[i].edges()) {
         if (out.getFrom() == out.getTo())
-          return true;
-      }
+          return true;      }
+
     }
     return false;
   }
@@ -341,12 +342,12 @@ Graph
     boolean
     hasCycle(Vertex from)
     {
-      if(from.edges().contains(this)){
-        return true;
+      for(Edge vis : from.edges()) {
+        if (vis.getFrom() == vis.getTo()) {
+          return true;
+        }
       }
-      else {
-        return false;
-      }
+      return false;
     }
 
     @Override

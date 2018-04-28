@@ -118,10 +118,11 @@ PerfectHashGenerator
 
       for(int i = 0; i < TABLE_ROWS; i++){
         for(int y = 0; y < TABLE_COLUMNS; y++){
-          T1[i][y] = Math.abs(rng.nextInt()) % (2*wordList.size() + 1);
-          T2[i][y] = Math.abs(rng.nextInt()) % (2*wordList.size() + 1);
+          T1[i][y] = Math.abs(rng.nextInt(2*wordList.size() + 1) % 2*wordList.size()+1);
+          T2[i][y] = Math.abs(rng.nextInt(2*wordList.size() + 1) % 2*wordList.size()+1);
         }
       }
+
 
       int[] gArray = new int[2*wordList.size()+1];
       gArray[0] = 0;
@@ -129,11 +130,11 @@ PerfectHashGenerator
 
       File file = new File("src//edu//iastate//cs228//hw5//" + outputName);
 
-      Graph temp = mapping(T1, T2,2*wordList.size(), rng, wordList);
+      Graph temp = mapping(T1, T2,2*wordList.size()+1, rng, wordList);
       gArray = temp.fillGArray(wordList.size());
       String test = temp.toString();
       System.out.print(test);
-      CodeGenerator codeGen = new CodeGenerator(T1, T2, gArray, 2*wordList.size(), wordList);
+      CodeGenerator codeGen = new CodeGenerator(T1, T2, gArray, 2*wordList.size()+1, wordList);
       OutputStream out = new FileOutputStream("src//edu//iastate//cs228//hw5//" + outputName);
       codeGen.generate(out, outputClassName);
 //
@@ -199,7 +200,7 @@ PerfectHashGenerator
     throws IllegalArgumentException
   {
     Graph toRet;
-    Visualizer vis = new Visualizer();
+    Visualizer vis = new Visualizer();  //REMOVE AFTER USE
 
     do
     {
